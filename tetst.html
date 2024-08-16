@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アルファベット表示</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            font-size: 5vw; /* スクリーンの幅に応じてボタンサイズを調整 */
+            padding: 5vw 8vw;
+            margin: 2vw;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        #display {
+            font-size: 20vw; /* スクリーンの幅に応じて文字サイズを調整 */
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .buttons button {
+                padding: 4vw 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="displayLetter('A')">A</button>
+            <button onclick="displayLetter('B')">B</button>
+            <button onclick="displayLetter('C')">C</button>
+            <button onclick="displayLetter('D')">D</button>
+        </div>
+        <div id="display"></div>
+    </div>
+
+    <script>
+        function displayLetter(letter) {
+            document.getElementById('display').innerText = letter;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アルファベット表示</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            font-size: 5vw; /* スクリーンの幅に応じてボタンサイズを調整 */
+            padding: 5vw 8vw;
+            margin: 2vw;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        #display {
+            font-size: 20vw; /* スクリーンの幅に応じて文字サイズを調整 */
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .buttons button {
+                padding: 4vw 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="displayLetter('A')">A</button>
+            <button onclick="displayLetter('B')">B</button>
+            <button onclick="displayLetter('C')">C</button>
+            <button onclick="displayLetter('D')">D</button>
+        </div>
+        <div id="display"></div>
+    </div>
+
+    <script>
+        function displayLetter(letter) {
+            document.getElementById('display').innerText = letter;
+        }
+    </script>
+</body>
+</html>
